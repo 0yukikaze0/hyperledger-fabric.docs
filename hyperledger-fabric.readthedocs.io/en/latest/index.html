@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+
+<!-- Mirrored from hyperledger-fabric.readthedocs.io/en/latest/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 15 Oct 2016 08:23:17 GMT -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Welcome to the Hyperledger fabric documentation">
+  
+  
+  <title>Hyperledger Fabric</title>
+  
+
+  <link rel="shortcut icon" href="img/favicon.ico">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="css/highlight.css">
+  <link href="https://media.readthedocs.org/css/badge_only.css" rel="stylesheet">
+  <link href="https://media.readthedocs.org/css/readthedocs-doc-embed.css" rel="stylesheet">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "None";
+    var mkdocs_page_input_path = "index.md";
+    var mkdocs_page_url = "http://hyperledger-fabric.readthedocs.io/";
+  </script>
+  
+  <script src="js/jquery-2.1.1.min.js"></script>
+  <script src="js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="js/highlight.pack.js"></script>
+  <script src="js/theme.js"></script> 
+  <script src="readthedocs-data.js"></script>
+  <script src="readthedocs-dynamic-include.js"></script>
+  <script src="https://media.readthedocs.org/static/core/js/readthedocs-doc-embed.js"></script>
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="index.html" class="icon icon-home"> Hyperledger Fabric</a>
+        <div role="search">
+  <form id ="rtd-search-form-alt" class="wy-form" action="http://hyperledger-fabric.readthedocs.io/en/latest/search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 current">
+        <a class="current" href="index.html">Home</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#incubation-notice">Incubation Notice</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#hyperledger-fabric">Hyperledger Fabric</a></li>
+                
+                    <li><a class="toctree-l4" href="#releases">Releases</a></li>
+                
+                    <li><a class="toctree-l4" href="#fabric-starter-kit">Fabric Starter Kit</a></li>
+                
+                    <li><a class="toctree-l4" href="#contributing-to-the-project">Contributing to the project</a></li>
+                
+                    <li><a class="toctree-l4" href="#maintainers">Maintainers</a></li>
+                
+                    <li><a class="toctree-l4" href="#communication">Communication </a></li>
+                
+                    <li><a class="toctree-l4" href="#still-have-questions">Still Have Questions?</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#hyperledger-fabric-documentation">Hyperledger Fabric Documentation</a></li>
+                
+                    <li><a class="toctree-l4" href="#table-of-contents">Table of Contents</a></li>
+                
+                    <li><a class="toctree-l4" href="#read-all-about-it">Read all about it</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#developer-guides">Developer guides</a></li>
+                
+                    <li><a class="toctree-l4" href="#chaincode-developer-guide">Chaincode developer guide</a></li>
+                
+                    <li><a class="toctree-l4" href="#application-developer-guide">Application developer guide</a></li>
+                
+                    <li><a class="toctree-l4" href="#fabric-developer-guide">Fabric developer guide</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#operations-guide">Operations guide</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#license">License </a></li>
+                
+            
+            </ul>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="glossary/index.html">Glossary</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="protocol-spec/index.html">Protocol Spec</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="biz/usecases/index.html">Usecases</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="SystemChaincode-noop/index.html">System Chaincode</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Installation and setup</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="Setup/Chaincode-setup/index.html">Chaincode or Application Developer Setup</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="Setup/JAVAChaincode/index.html">Java Chaincode Setup</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="Setup/Network-setup/index.html">Fabric Network Setup</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="Setup/NodeSDK-setup/index.html">NodeSDK Setup</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="Setup/ca-setup/index.html">CA Setup</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="Setup/logging-control/index.html">Logging</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>APIs</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="API/ChaincodeAPI/index.html">Chaincode APIs</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="API/CoreAPI/index.html">Core API</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="API/MemberServicesAPI/index.html">CA API</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Fabric Developer</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="abstract_v1/index.html">v1.0 Preview</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="CONTRIBUTING/index.html">Contributing</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="Gerrit/lf-account/index.html">Getting an Account</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="Gerrit/gerrit/index.html">Gerrit</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="dev-setup/devenv/index.html">Fabric Developer Setup</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="dev-setup/build/index.html">Building Fabric</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="Gerrit/best-practices/index.html">Best Practices</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="MAINTAINERS/index.html">Maintainers</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="Gerrit/reviewing/index.html">Reviewing</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="Gerrit/changes/index.html">Changes</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Style guides</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="Style-guides/go-style/index.html">Golang</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>FAQ</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="FAQ/chaincode_FAQ/index.html">ChainCodeFAQ</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="FAQ/confidentiality_FAQ/index.html">ConfidentialityFAQ</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="FAQ/consensus_FAQ/index.html">ConsensusFAQ</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="FAQ/identity_management_FAQ/index.html">Identity ManagementFAQ</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="FAQ/usage_FAQ/index.html">UsageFAQ</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Tech</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="tech/application-ACL/index.html">Application ACL</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="tech/attributes/index.html">Attributes</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="tech/best-practices/index.html">Best Practices</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>NodeSDK</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="nodeSDK/app-developer-env-setup/index.html">App-developer-env-setup</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="nodeSDK/app-overview/index.html">App-Overview</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="nodeSDK/node-sdk-guide/index.html">Node-SDK-guide</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="nodeSDK/node-sdk-indepth/index.html">Node-SDK-indepth</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="nodeSDK/sample-standalone-app/index.html">Sample-Standalone-app</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="nodeSDK/sample-web-app/index.html">Sample-web-app</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Starter Kit</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="starter/fabric-starter-kit/index.html">Starter Kit</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="releases/index.html">Releases</a>
+        
+    </li>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">Hyperledger Fabric</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Home</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="incubation-notice">Incubation Notice</h1>
+<p>This project is a Hyperledger project in <em>Incubation</em>. It was proposed to the
+community and documented <a href="https://goo.gl/RYQZ5N">here</a>. Information on what
+<em>Incubation</em> entails can be found in the <a href="https://goo.gl/4edNRc">Hyperledger Project Lifecycle
+document</a>.</p>
+<p><a href="https://jenkins.hyperledger.org/view/fabric/job/fabric-merge-x86_64/"><img alt="Build Status" src="https://jenkins.hyperledger.org/buildStatus/icon?job=fabric-merge-x86_64" /></a>
+<a href="https://goreportcard.com/report/github.com/hyperledger/fabric"><img alt="Go Report Card" src="https://goreportcard.com/badge/github.com/hyperledger/fabric" /></a>
+<a href="https://godoc.org/github.com/hyperledger/fabric"><img alt="GoDoc" src="https://godoc.org/github.com/hyperledger/fabric?status.svg" /></a>
+<a href="index5a8e.html?badge=latest"><img alt="Documentation Status" src="https://readthedocs.org/projects/hyperledger-fabric/badge/?version=latest" /></a></p>
+<h1 id="hyperledger-fabric">Hyperledger Fabric</h1>
+<p>The fabric is an implementation of blockchain technology, leveraging familiar
+and proven technologies. It is a modular architecture allowing pluggable
+implementations of various function. It features powerful container technology
+to host any mainstream language for smart contracts development.</p>
+<h2 id="releases">Releases</h2>
+<p>The fabric releases are documented <a href="releases/index.html">here</a>. We have just
+released our second release under the governance of the Hyperledger Project -
+v0.6-preview.</p>
+<h2 id="fabric-starter-kit">Fabric Starter Kit</h2>
+<p>If you&rsquo;d like to dive right in and get an operational experience on your local
+server or laptop to begin development, we have just the thing for you. We have
+created a standalone Docker-based <a href="starter/fabric-starter-kit/index.html">starter kit</a>
+that leverages the latest published Docker images that you can run on your
+laptop and be up and running in no time. That should get you going with a
+sample application and some simple chaincode. From there, you can go deeper
+by exploring our <a href="#developer-guides">developer guides</a>.</p>
+<h2 id="contributing-to-the-project">Contributing to the project</h2>
+<p>We welcome contributions to the Hyperledger Project in many forms. There&rsquo;s
+always plenty to do! Full details of how to contribute to this project are
+documented in the <a href="#fabric-developer-guide">Fabric developer&rsquo;s guide</a> below.</p>
+<h2 id="maintainers">Maintainers</h2>
+<p>The project&rsquo;s <a href="MAINTAINERS/index.html">maintainers</a>: are responsible for reviewing and
+merging all patches submitted for review and they guide the over-all technical
+direction of the project within the guidelines established by the Hyperledger
+Project&rsquo;s Technical Steering Committee (TSC).</p>
+<h2 id="communication">Communication <a name="communication"></a></h2>
+<p>We use <a href="https://slack.hyperledger.org/">Hyperledger Slack</a> for communication and
+Google Hangouts&trade; for screen sharing between developers. Our development
+planning and prioritization is done in <a href="https://jira.hyperledger.org/">JIRA</a>,
+and we take longer running discussions/decisions to the
+<a href="http://lists.hyperledger.org/mailman/listinfo/hyperledger-fabric">mailing list</a>.</p>
+<h2 id="still-have-questions">Still Have Questions?</h2>
+<p>We try to maintain a comprehensive set of documentation (see below) for various audiences.
+However, we realize that often there are questions that remain unanswered. For
+any technical questions relating to the Hyperledger Fabric project not answered
+in this documentation, please use
+<a href="http://stackoverflow.com/questions/tagged/hyperledger">StackOverflow</a>. If you
+need help finding things, please don&rsquo;t hesitate to send a note to the
+<a href="http://lists.hyperledger.org/mailman/listinfo/hyperledger-fabric">mailing list</a>,
+or ask on <a href="(https_/slack.hyperledger.org/).html">Slack</a>.</p>
+<h1 id="hyperledger-fabric-documentation">Hyperledger Fabric Documentation</h1>
+<p>The Hyperledger fabric is an implementation of blockchain technology, that has
+been collaboratively developed under the Linux Foundation&rsquo;s
+<a href="http://hyperledger.org/">Hyperledger Project</a>. It leverages familiar and
+proven technologies, and offers a modular architecture
+that allows pluggable implementations of various function including membership
+services, consensus, and smart contracts (Chaincode) execution. It features
+powerful container technology to host any mainstream language for smart
+contracts development.</p>
+<h2 id="table-of-contents">Table of Contents</h2>
+<p>Below, you&rsquo;ll find the following sections:</p>
+<ul>
+<li><a href="#read-all-about-it">Read All About It</a></li>
+<li>
+<p><a href="#developer-guides">Developer guides</a></p>
+</li>
+<li>
+<p><a href="#chaincode-developer-guide">Chaincode developer&rsquo;s guide</a></p>
+</li>
+<li><a href="#application-developer-guide">Application developer&rsquo;s guide</a></li>
+<li>
+<p><a href="#fabric-developer-guide">Fabric developer&rsquo;s guide</a></p>
+</li>
+<li>
+<p><a href="#operations-guide">Operations guide</a></p>
+</li>
+</ul>
+<h2 id="read-all-about-it">Read all about it</h2>
+<p>If you are new to the project, you can begin by reviewing the following links.
+If you&rsquo;d prefer to dive right in, see the
+<a href="#quickstart-documentation">Quickstart</a> section, below.</p>
+<ul>
+<li><a href="https://github.com/hyperledger/hyperledger/wiki/Whitepaper-WG">Whitepaper WG</a>:
+where the community is developing a whitepaper to explain the motivation and
+goals for the project.</li>
+<li><a href="https://github.com/hyperledger/hyperledger/wiki/Requirements-WG">Requirements WG</a>:
+where the community is developing use cases and requirements.</li>
+<li><a href="biz/usecases/index.html">Canonical use cases</a></li>
+<li><a href="glossary/index.html">Glossary</a>: to understand the terminology that we use throughout
+the Fabric project&rsquo;s documentation.</li>
+<li><a href="https://github.com/hyperledger/fabric/tree/master/docs/FAQ">Fabric FAQs</a></li>
+</ul>
+<h1 id="developer-guides">Developer guides</h1>
+<h2 id="chaincode-developer-guide">Chaincode developer guide</h2>
+<ul>
+<li><a href="dev-setup/devenv/index.html">Setting up the development environment</a>: when developing
+and testing Chaincode, or an application that leverages the fabric API or SDK,
+you&rsquo;ll probably want to run the fabric locally on your laptop to test. You can
+use the same setup that Fabric developers use.</li>
+<li><a href="Setup/Network-setup/index.html">Setting Up a Network For Development</a>: alternately, you
+can follow these instructions for setting up a local network for Chaincode
+development without the entire fabric development environment setup.</li>
+<li><a href="Setup/Chaincode-setup/index.html">Writing, Building, and Running Chaincode in a Development
+Environment</a>: a step-by-step guide to writing and
+testing Chaincode.</li>
+<li><a href="FAQ/chaincode_FAQ/index.html">Chaincode FAQ</a>: a FAQ for all of your burning questions
+relating to Chaincode.</li>
+</ul>
+<h2 id="application-developer-guide">Application developer guide</h2>
+<ul>
+<li><a href="API/CoreAPI/index.html">APIs - CLI, REST, and Node.js</a></li>
+<li><a href="API/CoreAPI/index.html#cli">CLI</a>: working with the command-line interface.</li>
+<li><a href="API/CoreAPI/index.html#rest-api">REST</a>: working with the REST API (<em>deprecated</em>).</li>
+<li><a href="nodeSDK/node-sdk-guide/index.html">Node.js SDK</a>: working with the Node.js SDK.</li>
+</ul>
+<h2 id="fabric-developer-guide">Fabric developer guide</h2>
+<ul>
+<li><a href="CONTRIBUTING/index.html">Making code contributions</a>: First, you&rsquo;ll want to familiarize
+     yourself with the project&rsquo;s contribution guidelines.</li>
+<li><a href="dev-setup/devenv/index.html">Setting up the development environment</a>: after that, you
+     will want to set up your development environment.</li>
+<li><a href="dev-setup/build/index.html">Building the fabric core</a>: next, try building the project
+     in your local development environment to ensure that everything is set up
+     correctly.</li>
+<li><a href="dev-setup/build/index.html#building-outside-of-vagrant">Building outside of Vagrant</a>:
+     for the <em>adventurous</em>, you might try to build outside of the standard Vagrant
+     development environment.</li>
+<li><a href="Setup/logging-control/index.html">Logging control</a>: describes how to tweak the logging
+     levels of various components within the fabric.</li>
+<li><a href="dev-setup/headers.txt">License header</a>: every source file must include this
+     license header modified to include a copyright statement for the principle
+     author(s).</li>
+</ul>
+<h1 id="operations-guide">Operations guide</h1>
+<ul>
+<li><a href="Setup/Network-setup/index.html">Setting Up a Network</a>: instructions for setting up a
+      network of fabric peers.</li>
+<li><a href="Setup/ca-setup/index.html">Certificate Authority (CA) Setup</a>: setting up a CA to
+      support identity, security (authentication/authorization), privacy and
+      confidentiality.</li>
+<li><a href="tech/application-ACL/index.html">Application ACL</a>: working with access control lists.</li>
+</ul>
+<h1 id="license">License <a name="license"></a></h1>
+<p>The Hyperledger Project uses the <a href="LICENSE.html">Apache License Version 2.0</a> software
+license.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="glossary/index.html" class="btn btn-neutral float-right" title="Glossary">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright &copy; 2016 IBM Corp. <br></br>Contributed to the Hyperledger Project under the <a href="https://github.com/hyperledger/fabric/blob/master/LICENSE" target="_blank">Apache Software License 2.0</a></p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org/">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+      
+        <span style="margin-left: 15px"><a href="glossary/index.html" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+
+<!-- Mirrored from hyperledger-fabric.readthedocs.io/en/latest/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 15 Oct 2016 08:23:39 GMT -->
+</html>
+
+<!--
+MkDocs version : 0.15.0
+Build Date UTC : 2016-10-14 13:29:45.259437
+-->

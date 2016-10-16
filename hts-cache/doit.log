@@ -1,0 +1,8 @@
+http://hyperledger-fabric.readthedocs.io/en/latest/ -W -O "/home/ashfaq/websites/Hyperledger-Fabric" -%v
+File generated automatically on Sat, 15 Oct 2016 13:52:51, do NOT edit
+
+To update a mirror, just launch httrack without any parameters
+The existing cache will be used (and modified)
+To have other options, retype all parameters and launch HTTrack
+To continue an interrupted mirror, just launch httrack without any parameters
+
